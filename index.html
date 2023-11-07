@@ -26,7 +26,7 @@
     const apiResponse = document.getElementById("apiResponse");
 
     apiButton.addEventListener("click", () => {
-        fetch("http://192.168.1.3:5000/saige")
+        fetch("http://192.168.1.34:5000/saige")
             .then(response => response.json()) // Parse the response as JSON
             .then(data => {
                 apiResponse.textContent = data.message;
